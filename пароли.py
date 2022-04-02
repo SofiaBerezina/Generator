@@ -5,10 +5,13 @@ numbers=0
 capitallet=0
 special='|<>?!@#$%^&*()_+=-~`'
 small = 'qwertyuiopasdfghjklzxcvbnmйцукенгшщзхъфывапролджэячсмитьбюё'
+big = 'QWERTYUIOPASDFGHJKLZXCVBNMЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮЁ'
 spec=0
-for i in small:
-    if 
-        
+for i in password:
+    if small.count(i)>=1:
+        capitallet+=0.5
+    if big.count(i)>=1:
+        capitallet+=0.5
 for i in special:
     if password.count(i)>=1:
         spec+=1
