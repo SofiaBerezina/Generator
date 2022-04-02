@@ -15,7 +15,7 @@ def password_level(password):
         if re.search('[A-Z]', password) or re.search('[А-Я]', password):
             protection += 1
         for i in password:
-            if i in password:
+            if i in symbols:
                 protection += 1
                 break
     if protection == 1:
@@ -28,4 +28,4 @@ def password_level(password):
         print('Сложный пароль')
 
 
-password_level('123!4567rfg@DDDds')
+password_level('1234567rfgDDDds')
